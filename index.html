@@ -3,44 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WeeGoo - Games</title>
-<meta name="description" content="WeeGoo makes small, fast, satisfying mobile games.">
+<title>WeeGoo Games</title>
+<meta name="description" content="WeeGoo Games: small, fast, satisfying games.">
+<link rel="icon" href="logo.webp" type="image/webp">
+<link rel="apple-touch-icon" href="logo.webp">
 <style>
-  :root { --bg:#10131f; --card:#1a1f33; --text:#f2f4fb; --muted:#9aa3c0; --accent:#ff9f1c; }
-  @media (prefers-color-scheme: light) {
-    :root { --bg:#f5f6fb; --card:#ffffff; --text:#171a2b; --muted:#5b6385; --accent:#e07b00; }
-  }
+  :root { --bg:#000; --card:#111; --line:#2a2a2a; --text:#f5f5f5; --muted:#9a9a9a; }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-  main { max-width:720px; margin:0 auto; padding:56px 16px; }
-  h1 { font-size:2.4rem; margin:0 0 4px; }
-  .tag { color:var(--muted); margin:0 0 40px; }
-  .card { background:var(--card); border-radius:16px; padding:24px; margin-bottom:20px; }
-  .card h2 { margin:0 0 8px; color:var(--accent); }
-  a { color:var(--accent); }
-  footer { color:var(--muted); font-size:.9rem; margin-top:40px; }
+  body { margin:0; min-height:100vh; display:flex; flex-direction:column; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; text-align:center; }
+  main { flex:1; width:100%; max-width:640px; margin:0 auto; padding:56px 20px 32px; }
+  .logo { width:min(260px,62vw); height:auto; display:block; margin:0 auto 20px; }
+  .tag { color:var(--muted); margin:0 0 48px; letter-spacing:.04em; }
+  h2 { font-size:.8rem; letter-spacing:.35em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 16px; }
+  .games { list-style:none; padding:0; margin:0 0 48px; display:grid; gap:12px; }
+  .games li { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; gap:16px; text-align:left; }
+  .games strong { font-size:1.05rem; }
+  a { color:var(--text); }
+  .games a { color:var(--muted); font-size:.9rem; white-space:nowrap; }
+  .contact { display:inline-block; padding:12px 26px; border:2px solid var(--text); border-radius:999px; text-decoration:none; font-weight:600; transition:background .15s,color .15s; }
+  .contact:hover, .contact:focus-visible { background:var(--text); color:var(--bg); }
+  .mail { color:var(--muted); font-size:.9rem; margin-top:12px; }
+  footer { color:var(--muted); font-size:.85rem; padding:24px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>WeeGoo</h1>
-  <p class="tag">Small, fast, satisfying mobile games.</p>
+  <img class="logo" src="logo.webp" alt="WeeGoo Games" width="1254" height="1254">
+  <p class="tag">Small, fast, satisfying games.</p>
 
-  <section class="card">
-    <h2>Claim It Arena</h2>
-    <p>Draw your way across the arena, close the loop and claim the ground, while dodging the enemies that hunt your trail. Coming soon to iOS.</p>
-  </section>
+  <h2>Games</h2>
+  <ul class="games">
+    <li><strong>After Gomaa Praying</strong><a href="aftergomaapraying/privacy.html">Privacy Policy</a></li>
+    <li><strong>Claim It Arena</strong><a href="claimitarena/privacy.html">Privacy Policy</a></li>
+    <li><strong>To My Husband</strong><a href="tomyhusband/privacy.html">Privacy Policy</a></li>
+  </ul>
 
-  <section class="card">
-    <h2>After Gomaa Praying</h2>
-    <p>Survive six days in an arena overrun by zombies, as portals open across the map one day at a time. Coming soon to iOS.</p>
-  </section>
-
-  <footer>
-    <a href="claimitarena/privacy.html">Claim It Arena Privacy Policy</a><br>
-    <a href="aftergomaapraying/privacy.html">After Gomaa Praying Privacy Policy</a>
-    <p>&copy; 2026 WeeGoo</p>
-  </footer>
+  <h2>Contact</h2>
+  <a class="contact" href="mailto:lailaahmed18@outlook.com">Email us</a>
+  <p class="mail">lailaahmed18@outlook.com</p>
 </main>
+<footer>&copy; 2026 WeeGoo Games</footer>
 </body>
 </html>
